@@ -11,7 +11,10 @@
 [user]
 	name = root
 	email = root@example.com
-	
+
+[include]
+  path = /etc/.gitconfig
+
 [init]
 	defaultBranch = main
 
