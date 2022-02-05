@@ -9,8 +9,8 @@ chmod:
 	@chmod -R +x bin/* 2>/dev/null || true
 
 install:
-	@sudo python3 -m pip --quiet uninstall $$(basename "$PWD")
-	@sudo python3 -m pip --quiet install --upgrade --no-cache $$(basename "$PWD")
+	@sudo python3 -m pip --quiet uninstall $$(basename "$$PWD")
+	@sudo python3 -m pip --quiet install --upgrade --no-cache $$(basename "$$PWD")
 
 test:
 	@pytest
